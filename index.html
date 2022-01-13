@@ -4,25 +4,38 @@
     <title>ML-EDU</title>
   </head>
   <style>
-    div {
-      background-image: url('./images/oldbrowser.png');
+    body {
+      background-image: url('https://raw.githubusercontent.com/sebastiandres/ml-edu/main/images/oldbrowser.png');
+      background-size: cover;
     }
-    </style>
+    .content {
+      font-size: 150%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+     }  
+  </style>
   <body>
-    <p>Some interactive streamlit apps to teach concepts of Machine Learning</p>
-    <ul>
-        <li>
-            <b><a href="https://share.streamlit.io/sebastiandres/ml_edu_confusion_matrix/main">The (confusion) Matrix </a></b>
-            Take the blue pill and I'll show you the confusion matrix.
-        </li>
-        <li>
-            <b>The Lord of the Metrics:</b> 
-            One metric to rule them all?
-        </li>
-        <li>
-            <b>Back to the Matrix:</b> 
-            Can you guess the matrix from the metric, McFly? Or are you a chicken?
-        </li>
-      </ul>
-    </body>
+    <div class="content">
+      <p>Some interactive streamlit apps to teach concepts of Machine Learning</p>
+      <ul>
+          <li>
+              <b><a href="https://share.streamlit.io/sebastiandres/ml_edu_confusion_matrix/main">The (confusion) Matrix:</a></b>
+              Take the blue pill to learn all about the confusion matrix.
+          </li>
+          <br>
+          <li>
+              <b>Return of the Metrics:</b> 
+              May the metrics be with you. [February 2022!]
+          </li>
+          <br>
+          <li>
+              <b>Back to the Matrix:</b> 
+              Can you obtain back the matrix from the metric, McFly? Or are you a chicken? [March 2022]
+          </li>
+        </ul>
+    </div>
+  </body>
 </html>
