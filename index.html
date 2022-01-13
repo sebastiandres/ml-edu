@@ -7,15 +7,28 @@
     body {
       background-image: url('https://raw.githubusercontent.com/sebastiandres/ml-edu/main/images/oldbrowser.png');
       background-size: cover;
+      background-repeat:no-repeat;
     }
-    .content {
+    @media (orientation: landscape) {
+      .content {
       font-size: 150%;
       position: absolute;
       left: 50%;
       top: 50%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-     }  
+      }
+    }
+  
+    @media (orientation: portrait) {
+      .content {
+      font-size: 150%;
+      position: absolute;
+      left: 100px;
+      right: 100px;
+      top: 150px;
+      }
+    }  
   </style>
   <body>
     <div class="content">
